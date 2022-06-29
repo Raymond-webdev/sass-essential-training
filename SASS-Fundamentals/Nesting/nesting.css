@@ -1,19 +1,20 @@
-/* This is the css code compiled from SASSY code. */
-
 h1 {
-    color: yellow;
-    margin-bottom: 0;
-  }
-  
-  .box {
-    padding: 1em 2em;
-    background: beige;
-    color: black;
-  }
-  .box h1,
-  . p box{
-    margin: 0;
-  }
-  .box h1 {
-    color: red;
-  }
+  color: yellow;
+  margin-bottom: 0;
+}
+
+.box {
+  padding: 1em 2em;
+  background: beige;
+  color: black;
+}
+
+.box h1,
+.box p {
+  margin: 0;
+}
+
+.box h1 {
+  color: red;
+}
+/*# sourceMappingURL=nesting.css.map */
