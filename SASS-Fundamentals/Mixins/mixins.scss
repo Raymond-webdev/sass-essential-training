@@ -1,0 +1,20 @@
+// I have created a @mixin rule and gave it a name of "btn".
+@mixin btn ($col: #444) {
+    border: 0;
+    border-radius: 5px;
+    background: $col;
+    font-size: 1rem;
+    color: white;
+    padding: 0.7rem 0.9rem;
+    margin: 0.5em auto;
+    display: inline-block;
+    cursor: pointer;
+}
+// @include rule applies the @mixin btn to the class (.btn)
+.btn {
+    @include btn;
+}
+.btn-primary {
+    @include btn(#3ab5e9);
+    color: yellow;
+}
