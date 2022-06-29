@@ -7,3 +7,7 @@ I am using a SASS course on LinkedIn Learning to learn the fundamentals of Synat
 <h2>Why This Course?</h2>
 
 <p>I am studying this online training course as once I have completed the course the SASS skills will enable to me to complete certain projects in software engineering at a more efficient manner.</p>
+<p>We use SASS rather than CSS because the syntax is lean which makes our code more efficient.
+In programming best practice we adhere to the principal of DRY (Do not repeat yourself).
+By following this best practice we are limiting the number of bugs in pur code base.
+</p>

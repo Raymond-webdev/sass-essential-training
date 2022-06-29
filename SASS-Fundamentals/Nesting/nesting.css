@@ -1,4 +1,4 @@
-// This is the SASSY code for the nesting lecture 
+/* This is the css code compiled from SASSY code. */
 
 h1 {
     color: yellow;
@@ -9,12 +9,11 @@ h1 {
     padding: 1em 2em;
     background: beige;
     color: black;
-    h1,
-    p {
-      margin: 0;
-    }
-    h1 {
-      color: red;
-    }
   }
-  
+  .box h1,
+  . p box{
+    margin: 0;
+  }
+  .box h1 {
+    color: red;
+  }
