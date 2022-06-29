@@ -1,0 +1,7 @@
+// 
+@use "variables" as var;
+@use "base";
+
+h1 {
+    color: var.$primary;
+}
