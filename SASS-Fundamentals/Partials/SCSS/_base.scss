@@ -1,7 +1,7 @@
 // this file is calling the "_variables" file and is referring to the $bg variable 
 //within that file.
 
-@use "_variables";
+@use "variables";
 body {
     background: variables.$bg;
     font-family: Avenir, Helvetica, Arial, sans-serif;
