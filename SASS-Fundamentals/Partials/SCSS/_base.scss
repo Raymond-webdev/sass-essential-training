@@ -1,5 +1,13 @@
-// 
-@use "variables";
+// this file is calling the "_variables" file and is referring to the $bg variable 
+//within that file.
+
+@use "_variables";
 body {
     background: variables.$bg;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-ang: center;
+    color: #2c3e50;
+    margin-top: 60px;
 }
