@@ -1,4 +1,4 @@
-<h1> sass-essential-training</h1>
+<h1> Sass-Essential-Training</h1>
 <p>LinkedIn learning sass fundamental training course
 I am using a SASS course on LinkedIn Learning to learn the fundamentals of Synatically Awesome Stylesheets (Sass) a modern web development language that helps you write CSS better, faster and with more advanced features. The instructor shows us the best way to install Sass and work with its main features: variables, nesting, partilas and mixins. Plus learn how to use SassScript to create complex functions from Sass lists and control statements.</p>
 
