@@ -1,0 +1,29 @@
+.msg {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #888;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 1.25rem;
+  margin: 1em 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.msg:hover {
+  background: #555;
+}
+
+.msg h1 {
+  margin: 0 0 0.2em 0;
+  font-size: 2.5em;
+}
+
+.msg-info {
+  background: #33a2a2;
+}
+
+.msg-info:hover {
+  background: #1a5353;
+}
+/*# sourceMappingURL=challenge.css.map */
