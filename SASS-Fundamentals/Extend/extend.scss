@@ -13,11 +13,11 @@ btn {
 
 //   The @extend rule inserts all the properties from the .btn class into the current class.
     &-primary {
-      @extend .btn;
+      @extend btn;
       background: #3ab5e9;
     }
     &-secondary {
-      @extend .btn;
+      @extend btn;
       background: orange;
     }
   }

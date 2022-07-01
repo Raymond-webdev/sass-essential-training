@@ -1,0 +1,40 @@
+//Lists can be used to create an array type object that helps you go through a group of items easily.
+//You can create them by using either commas or spaces and also use optional brackets or parentheses.
+//SCSS arrays are number 1 indexed so the first element is element number one unlike in JavaScript which is element number 0.
+
+
+//By using the #{nth($myArray, 1)}, it takes me to the first elemnt which is element 1 (primary)
+$myArray: primary secondary warning "item info";
+/* #{nth($myArray, 1)} */
+
+//It taks the second element which is (secondary)
+$myArray: primary, secondary, warning, "item info";
+/* #{nth($myArray, 2)} */
+
+//It takes the third element which is (warning)
+$myArray: (primary, secondary, warning, "item info");
+/* #{nth($myArray, 3)} */
+
+//It takes the fourth element which is (item info)
+$myArray: [primary, secondary, warning, "item info" ];
+/* #{nth($myArray, 4)} */
+
+//By using negative indexes, it will go to the end of the array selecting the last item.
+$myArray: [primary, secondary, warning, "item info" ];
+/* #{nth($myArray, -1)} */
+
+
+// Examples of using the methods above and checking the css file.
+
+$myList1: primary, seconday, warning;
+$myList2: [red, orange, cyan];
+
+/* length: #{length(#myList1)} */
+/* nth: #{nth(#myList1, 2)} */
+/* set-nth: #{set-nth($myList1, 2, dark)} */
+/* index: #{index($myList2, orange)} */
+/* append: #{append($myList1, danger, comma)} */
+/* join: #{join($myList1, $myList2, space)} */
+/* zip: #{zip($myList1, $myList2)} */
+/* is-bracketed: #{is-bracketed($myList2)} */
+/* list-separator: #{list-separator($myList2)} */

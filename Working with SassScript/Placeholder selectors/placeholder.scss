@@ -1,0 +1,24 @@
+// The placeholder selector (%btn) is a class that is not compiled within the scss
+// but just used in order to extend the rules inside it to another class.
+%btn {
+    border: 0;
+    border-radius: 5px;
+    background: #444;
+    font-size: 1rem;
+    color: white;
+    padding: 0.7rem 0.9rem;
+    margin: 0.5em auto;
+    display: inline-block;
+    cursor: pointer;
+  }
+  //@extend is used in order to include the placeholder (%btn) inside the .btn-primary class.
+  .btn-primary {
+    @extend %btn;
+    background: #3ab5e9;
+  }
+  //@extend is used in order to include the placeholder (%btn) inside the .btn-primary class.
+  .btn-secondary {
+    @extend %btn;
+    background: orange;
+  }
+  
