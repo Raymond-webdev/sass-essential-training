@@ -1,0 +1,13 @@
+//The variable $font-size has been created which is 
+//going to be used with the @for directive.
+$font-size: (3rem, 2.5rem, 2rem);
+
+// We are using the @for ruel and it's going through a tempoarary variable and that variable 
+//is going to go from 1 through the entre lenght of that variable($font-size)
+//Interpolation is being used to display the variable name below which is going to apply
+//the font-size to the "h1, h2, h3" tag.
+@for $i from 1 through length($font-size) {
+  h#{$i} {
+    font-size: nth($font-size, $i);
+  }
+}
