@@ -1,9 +1,15 @@
+// Below is an example of what a map might look like.
+// We add the @use rule to specify that we are using the map module 
+
 @use "sass:map";
 
+// we define a map by using a variable name ($colorList) 
+// and withing the parentheses you put the name and value pairs.
 $colorList: (
   "primary": RoyalBlue,
   "secondary": Tomato,
   "accent": YellowGreen
 );
 
+// Below we use the (map.get) to get the value called "primary" out of the $colorList map.
 /* #{map.get($colorList, "primary")} */ ;
