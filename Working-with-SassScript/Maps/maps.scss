@@ -1,0 +1,9 @@
+@use "sass:map";
+
+$colorList: (
+  "primary": RoyalBlue,
+  "secondary": Tomato,
+  "accent": YellowGreen
+);
+
+/* #{map.get($colorList, "primary")} */ ;
