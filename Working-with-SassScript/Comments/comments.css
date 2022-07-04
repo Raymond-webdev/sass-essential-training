@@ -1,0 +1,16 @@
+/*With SASS comments you can have any CSS comments that you want so either the regular 
+//css comment or the multiline version. */
+/*The regular SCSS comments are going to be published into the css file unless
+ the SASS has been configured to output in compressed mode.*/
+/* Regular CSS -- Published */
+/* Multi Line
+    Comments -- Published */
+/*The comment below will not be published when file is converted to css */
+/*By adding the exclamation point inside the comment you can be sure 
+that the comment will always be published when file is converted to css. */
+/*! Force publish this one */
+/*Interpolation can be used inside your comments so you can output the value 
+the the color above in a comment by adding the hash sign and then the 
+curly braces with any sort of expresions inside which will be added to your comments. */
+/* Interpolate: #3ab5e9 */
+/*# sourceMappingURL=comments.css.map */

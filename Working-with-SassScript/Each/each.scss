@@ -1,0 +1,29 @@
+// We have a @mixin created below with arguments included.
+@mixin btn($name: "", $bg: #444, $col: white) {
+    .btn#{$name} {
+      border: 0;
+      border-radius: 5px;
+      background: $bg;
+      font-size: 1rem;
+      color: $col;
+      padding: 0.7rem 0.9rem;
+      margin: 0.5em auto;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+//   A list has been created below with three elements which is going to help for the next step creating 
+//   those 3 classes using the @each rule.
+//   The first element in the list($buttons) has got one item ("") and it's an empty item which is going to generate a class called (btn).
+//   The second element is going to pass along a -primary item which is going to
+//   create the btn-primary class including the 2 colors.
+//   The third element is going to pass along a -secondary item which is going to create the btn-secondary
+//   class including the 2 colors.
+  $buttons: "", -primary #3ab5e9 hotpink, -secondary green yellow;
+  
+//    For each item which is part of the @each directive, it shall be assigned a value from the variable $button.
+//    @include is used then add the mixin btn also create those three classes.
+  @each $name, $bg, $col in $buttons {
+    @include btn($name, $bg, $col);
+  }
+  

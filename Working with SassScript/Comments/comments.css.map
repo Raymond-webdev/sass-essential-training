@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAIA,8BAA8B;AAC9B;4BAC4B;AAK5B,6BAA6B;AAG7B,0BAA4B",
-    "sources": [
-        "comments.scss"
-    ],
-    "names": [],
-    "file": "comments.css"
-}

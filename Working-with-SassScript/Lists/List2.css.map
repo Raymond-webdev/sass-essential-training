@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,eAAiC;AACjC,mBAA8B;AAC9B,qCAA4C;AAC5C,cAAuC;AACvC,gDAAgD;AAChD,oDAA8C;AAC9C,qDAAqC;AACrC,wBAA6C;AAC7C,2BAAiD",
+    "sources": [
+        "List2.scss"
+    ],
+    "names": [],
+    "file": "List2.css"
+}
