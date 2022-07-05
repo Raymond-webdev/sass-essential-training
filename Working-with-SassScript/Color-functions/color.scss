@@ -1,0 +1,12 @@
+// use @ rule is used below in order to add all the different color rules.
+@use "sass:color";
+$color: cyan;
+
+/* #{color.adjust($color, $lightness: -20, $alpha: .4)} */
+/* #{transparentize($color, .9)} */
+/* #{lighten($color, 30)} */
+/* #{darken($color, 30)} */
+
+h1 {
+  color: transparentize($color, 0.9);
+}

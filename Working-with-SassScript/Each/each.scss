@@ -21,7 +21,8 @@
 //   class including the 2 colors.
   $buttons: "", -primary #3ab5e9 hotpink, -secondary green yellow;
   
-//    For each item which is part of the @each directive, it shall be assigned a value from the list $button.
+//    For each item which is part of the @each directive, it shall be assigned a value 
+//    from the list $button.
 //    @include is used then to add the mixin btn also create those three classes.
   @each $name, $bg, $col in $buttons {
     @include btn($name, $bg, $col);

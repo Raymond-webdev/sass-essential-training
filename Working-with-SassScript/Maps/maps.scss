@@ -12,4 +12,4 @@ $colorList: (
 );
 
 // Below we use the (map.get) to get the value called "primary" out of the $colorList map.
-/* #{map.get($colorList, "primary")} */ ;
+ #{map.get($colorList, "primary")};

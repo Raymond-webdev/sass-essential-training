@@ -1,0 +1,45 @@
+@use "sass:map";
+@use "sass:color";
+
+$badges: (
+  "-primary": (
+    RoyalBlue,
+    White
+  ),
+  "-danger": (
+    Crimson,
+    White
+  ),
+  "-info": (
+    Cyan,
+    Black
+  )
+);
+
+@mixin badge($name: "", $bg: #444, $col: white, $style: null) {
+  .badge#{$name} {
+    border: 0;
+    @if $style == "pill" {
+        border-radius: 30px !important;
+        padding: 0 0.6em !important;
+    } @else {
+        border-radius: 5px;
+        padding: 0 0.3em;
+    }
+    background: $bg;
+    font-size: 0.8em;
+    color: $col;
+    margin: 0.1em;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+      background: color.scale($bg, $lightness: -30%);
+    }
+  }
+}
+
+@include badge("");
+@include badge("-pill", $style: "pill");
+@each $key, $values in $badges {
+  @include badge($key, $values...);
+}
