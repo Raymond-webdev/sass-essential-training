@@ -1,6 +1,10 @@
+// The challenge below is to create a mixin that will help us generate badges for a website.
+// We have two modules imported in order to use the map and color functions.
 @use "sass:map";
 @use "sass:color";
 
+// Below a map has been created for the $badges variable that includes three classes
+//  with color values.
 $badges: (
   "-primary": (
     RoyalBlue,
@@ -16,6 +20,10 @@ $badges: (
   )
 );
 
+// A @mixin has been created below which is going to receive a name, a background color,
+// a color and a style as arguments. 
+// Interpolation is being used in order to give the badge class a name that can be used later.
+// A conditional if-else statement has been added for the style argument.
 @mixin badge($name: "", $bg: #444, $col: white, $style: null) {
   .badge#{$name} {
     border: 0;
@@ -38,8 +46,11 @@ $badges: (
   }
 }
 
+//  The two badge classes have been called with the @include rule.
 @include badge("");
 @include badge("-pill", $style: "pill");
+
+// @each rule is being used in oder to pass along the key/values that are inside of the map.
 @each $key, $values in $badges {
-  @include badge($key, $values...);
+ @include badge($key, $values...);
 }
