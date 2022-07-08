@@ -1,0 +1,10 @@
+// These are sass variables starting with the dollar ($) symbol.
+$bg: #ead2a8;
+$primary-color: red;
+
+body {
+  background: $bg;
+}
+p {
+    color: $primary-color;
+}

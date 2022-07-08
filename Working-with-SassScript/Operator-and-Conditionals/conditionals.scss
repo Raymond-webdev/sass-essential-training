@@ -1,0 +1,27 @@
+// Below we have the @if and @else rules used withing a mixin.
+// So in our example if the $oval variable is set to "true", the border -radius will be 50%,
+// otherwise if it's false it's going to give a border-radius of 5%.
+@mixin btn($name: "", $bg: #444, $col: white, $oval: false) {
+    .btn#{$name} {
+      border: 0;
+      @if $oval {
+        border-radius: 50%;
+      } @else {
+        border-radius: 5px;
+      }
+      background: $bg;
+      font-size: 1rem;
+      color: $col;
+      padding: 0.7rem 0.9rem;
+      margin: 0.5em auto;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  // btn class is going to have a border radius to 5% due to the value of $oval variable being false.
+  // btn-primary class is going to have a border-radius of 5% due to the value of $oval variable being false
+  // btn=circle class is going to have a border-radius of 50% due to the value of $oval variable being true.
+  @include btn;
+  @include btn("-primary", #3ab5e9);
+  @include btn("-circle", Crimson, $oval: true);
+  

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;0CAC0C;AAE1C;6DAC6D;AAC7D,8BAA8B;AAC9B;4BAC4B;AAG5B,0EAA0E;AAG1E;2EAC2E;AAC3E,6BAA6B;AAK7B;;wFAEwF;AACxF,0BAA4B",
+    "sources": [
+        "comments.scss"
+    ],
+    "names": [],
+    "file": "comments.css"
+}

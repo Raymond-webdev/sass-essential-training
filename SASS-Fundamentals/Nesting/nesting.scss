@@ -1,0 +1,20 @@
+// This is the SASSY code for the nesting lecture 
+
+h1 {
+    color: yellow;
+    margin-bottom: 0;
+  }
+  
+  .box {
+    padding: 1em 2em;
+    background: beige;
+    color: black;
+    h1,
+    p {
+      margin: 0;
+    }
+    h1 {
+      color: red;
+    }
+  }
+  

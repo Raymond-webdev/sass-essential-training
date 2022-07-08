@@ -1,0 +1,28 @@
+// A @mixin has been created with a series a variables that will pass along to this mixin.
+// 
+@mixin btn($name: "", $bg: #444, $col: white) {
+    // in the line below there is interpolation used to determine the name of 
+    //the button .btn#{$name} that's being created.
+    // whatever name is whitin the @mixin btn("$name:""), 
+    //that wil be assigned to the class below .btn#{$name}.
+    .btn#{$name} {
+      border: 0;
+      border-radius: 5px;
+      background: $bg;
+      font-size: 1rem;
+      color: $col;
+      padding: 0.7rem 0.9rem;
+      margin: 0.5em auto;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  //the class (.btn) has been created inside the (@mixin btn) above.
+  //we can call this by using the @include rule which creates the class (.btn).
+  @include btn;
+
+  //the (.btn) has been called again with a set of parameters inside the brackets
+  // ("-primary", #3ab5e9) which will create a new class called btn-primary
+  // and assing to it a background color of blue.
+  @include btn("-primary", #3ab5e9);
+  

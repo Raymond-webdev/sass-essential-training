@@ -1,0 +1,25 @@
+.btn {
+  border: 0;
+  border-radius: 5px;
+  background: #444;
+  font-size: 1rem;
+  color: white;
+  padding: 0.7rem 0.9rem;
+  margin: 0.5em auto;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 0;
+  border-radius: 5px;
+  background: #3ab5e9;
+  font-size: 1rem;
+  color: white;
+  padding: 0.7rem 0.9rem;
+  margin: 0.5em auto;
+  display: inline-block;
+  cursor: pointer;
+  color: yellow;
+}
+/*# sourceMappingURL=mixins.css.map */

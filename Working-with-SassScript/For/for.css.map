@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AASE,AAAA,EAAE,CAAK;EACL,SAAS,EARA,IAAI;CASd;;AAFD,AAAA,EAAE,CAAK;EACL,SAAS,EARM,MAAM;CAStB;;AAFD,AAAA,EAAE,CAAK;EACL,SAAS,EARc,IAAI;CAS5B",
+    "sources": [
+        "for.scss"
+    ],
+    "names": [],
+    "file": "for.css"
+}

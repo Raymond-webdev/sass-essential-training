@@ -1,0 +1,7 @@
+// this file is using variables by calling the two files below with the help of @use command.
+@use "variables" as var;
+@use "base";
+
+h1 {
+    color: var.$primary;
+}

@@ -1,0 +1,24 @@
+// in this file there are 3 classes and 2 of them have been created within the scss
+//using the & parent selector symbol.
+btn {
+    border: 0;
+    border-radius: 5px;
+    background: #444;
+    font-size: 1rem;
+    color: white;
+    padding: 0.7rem 0.9rem;
+    margin: 0.5em auto;
+    display: inline-block;
+    cursor: pointer;
+
+//   The @extend rule inserts all the properties from the .btn class into the current class.
+    &-primary {
+      @extend btn;
+      background: #3ab5e9;
+    }
+    &-secondary {
+      @extend btn;
+      background: orange;
+    }
+  }
+  
